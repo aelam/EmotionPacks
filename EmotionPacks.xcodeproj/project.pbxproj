@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		949946AC15BD53A000A5FE57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949946AB15BD53A000A5FE57 /* UIKit.framework */; };
+		949946AE15BD53A000A5FE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949946AD15BD53A000A5FE57 /* Foundation.framework */; };
+		949946B015BD53A000A5FE57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949946AF15BD53A000A5FE57 /* CoreGraphics.framework */; };
+		949946B615BD53A000A5FE57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949946B415BD53A000A5FE57 /* InfoPlist.strings */; };
+		949946B815BD53A000A5FE57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946B715BD53A000A5FE57 /* main.m */; };
+		949946BC15BD53A000A5FE57 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BB15BD53A000A5FE57 /* JDAppDelegate.m */; };
+		949946BF15BD53A000A5FE57 /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BE15BD53A000A5FE57 /* JDViewController.m */; };
+		949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949946C015BD53A000A5FE57 /* JDViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		949946A715BD53A000A5FE57 /* EmotionPacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionPacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		949946AB15BD53A000A5FE57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		949946AD15BD53A000A5FE57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		949946AF15BD53A000A5FE57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		949946B315BD53A000A5FE57 /* EmotionPacks-Info.plist */ = {isa = PBXFileReference; path = "EmotionPacks-Info.plist"; sourceTree = "<group>"; };
+		949946B515BD53A000A5FE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		949946B715BD53A000A5FE57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		949946B915BD53A000A5FE57 /* EmotionPacks-Prefix.pch */ = {isa = PBXFileReference; path = "EmotionPacks-Prefix.pch"; sourceTree = "<group>"; };
+		949946BA15BD53A000A5FE57 /* JDAppDelegate.h */ = {isa = PBXFileReference; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		949946BB15BD53A000A5FE57 /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		949946BD15BD53A000A5FE57 /* JDViewController.h */ = {isa = PBXFileReference; path = JDViewController.h; sourceTree = "<group>"; };
+		949946BE15BD53A000A5FE57 /* JDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
+		949946C115BD53A000A5FE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JDViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		949946A415BD53A000A5FE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949946AC15BD53A000A5FE57 /* UIKit.framework in Frameworks */,
+				949946AE15BD53A000A5FE57 /* Foundation.framework in Frameworks */,
+				949946B015BD53A000A5FE57 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9499469C15BD539F00A5FE57 = {
+			isa = PBXGroup;
+			children = (
+				949946B115BD53A000A5FE57 /* EmotionPacks */,
+				949946AA15BD53A000A5FE57 /* Frameworks */,
+				949946A815BD53A000A5FE57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		949946A815BD53A000A5FE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949946A715BD53A000A5FE57 /* EmotionPacks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		949946AA15BD53A000A5FE57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949946AB15BD53A000A5FE57 /* UIKit.framework */,
+				949946AD15BD53A000A5FE57 /* Foundation.framework */,
+				949946AF15BD53A000A5FE57 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		949946B115BD53A000A5FE57 /* EmotionPacks */ = {
+			isa = PBXGroup;
+			children = (
+				949946BA15BD53A000A5FE57 /* JDAppDelegate.h */,
+				949946BB15BD53A000A5FE57 /* JDAppDelegate.m */,
+				949946BD15BD53A000A5FE57 /* JDViewController.h */,
+				949946BE15BD53A000A5FE57 /* JDViewController.m */,
+				949946C015BD53A000A5FE57 /* JDViewController.xib */,
+				949946B215BD53A000A5FE57 /* Supporting Files */,
+			);
+			path = EmotionPacks;
+			sourceTree = "<group>";
+		};
+		949946B215BD53A000A5FE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				949946B315BD53A000A5FE57 /* EmotionPacks-Info.plist */,
+				949946B415BD53A000A5FE57 /* InfoPlist.strings */,
+				949946B715BD53A000A5FE57 /* main.m */,
+				949946B915BD53A000A5FE57 /* EmotionPacks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		949946A615BD53A000A5FE57 /* EmotionPacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949946C515BD53A000A5FE57 /* Build configuration list for PBXNativeTarget "EmotionPacks" */;
+			buildPhases = (
+				949946A315BD53A000A5FE57 /* Sources */,
+				949946A415BD53A000A5FE57 /* Frameworks */,
+				949946A515BD53A000A5FE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionPacks;
+			productName = EmotionPacks;
+			productReference = 949946A715BD53A000A5FE57 /* EmotionPacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9499469E15BD539F00A5FE57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JD;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 949946A115BD539F00A5FE57 /* Build configuration list for PBXProject "EmotionPacks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9499469C15BD539F00A5FE57;
+			productRefGroup = 949946A815BD53A000A5FE57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				949946A615BD53A000A5FE57 /* EmotionPacks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		949946A515BD53A000A5FE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949946B615BD53A000A5FE57 /* InfoPlist.strings in Resources */,
+				949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		949946A315BD53A000A5FE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949946B815BD53A000A5FE57 /* main.m in Sources */,
+				949946BC15BD53A000A5FE57 /* JDAppDelegate.m in Sources */,
+				949946BF15BD53A000A5FE57 /* JDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		949946B415BD53A000A5FE57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949946B515BD53A000A5FE57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		949946C015BD53A000A5FE57 /* JDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949946C115BD53A000A5FE57 /* en */,
+			);
+			name = JDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		949946C315BD53A000A5FE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		949946C415BD53A000A5FE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		949946C615BD53A000A5FE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmotionPacks/EmotionPacks-Prefix.pch";
+				INFOPLIST_FILE = "EmotionPacks/EmotionPacks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		949946C715BD53A000A5FE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmotionPacks/EmotionPacks-Prefix.pch";
+				INFOPLIST_FILE = "EmotionPacks/EmotionPacks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949946A115BD539F00A5FE57 /* Build configuration list for PBXProject "EmotionPacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949946C315BD53A000A5FE57 /* Debug */,
+				949946C415BD53A000A5FE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949946C515BD53A000A5FE57 /* Build configuration list for PBXNativeTarget "EmotionPacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949946C615BD53A000A5FE57 /* Debug */,
+				949946C715BD53A000A5FE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9499469E15BD539F00A5FE57 /* Project object */;
+}
