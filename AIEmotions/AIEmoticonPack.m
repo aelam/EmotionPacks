@@ -307,7 +307,7 @@
 	NSDictionary	*infoDict = [NSDictionary dictionaryWithContentsOfFile:infoDictPath];
 	NSDictionary	*localizedInfoDict = [bundle localizedInfoDictionary];
 
-    isBigEmoticon = [[infoDict objectForKey:IS_BIG_EMOTICON_KEY] boolValue];
+    isBigEmoticon = [infoDict objectForKey:IS_BIG_EMOTICON_KEY];
     
 	//If no info dict was found, assume that this is an old emoticon pack and try to upgrade it
 	if (!infoDict) {

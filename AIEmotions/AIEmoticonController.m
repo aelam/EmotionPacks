@@ -140,7 +140,7 @@ NSInteger packSortFunction(id packA, id packB, void *packOrderingArray);
                 NSInteger					textLength;
                 NSRange						emoticonRangeInNewMessage;
                 //
-                originalEmoticonLocation = *currentLocation;
+//                originalEmoticonLocation = *currentLocation;
                 //
                 //Use the most appropriate, longest string of those which could be used for the emoticon text we found here
                 AIEmoticon *emoticon = [self _bestReplacementFromEmoticons:candidateEmoticons
@@ -164,7 +164,7 @@ NSInteger packSortFunction(id packA, id packB, void *packOrderingArray);
             }
         }
         
-        *currentLocation += 1;
+        (*currentLocation) += 1;
         
         if (callingRecursively && (*currentLocation) < (*newMessage).length) {
             return [self replaceAnEmoticonStartingAtLocation3:currentLocation fromString:*newMessage intoString:newMessage callingRecursively:callingRecursively emoticonStartCharacterSet:emoticonStartCharacterSet emoticonIndex:emoticonIndex];
@@ -409,7 +409,7 @@ NSInteger packSortFunction(id packA, id packB, void *packOrderingArray);
 					[tempSet formUnionWithCharacterSet:[NSCharacterSet symbolCharacterSet]];
 					//remove any characters *in* the replacement string from the trimming set
 					[tempSet removeCharactersInString:replacementString];
-					[endingSetDict setObject:[tempSet copy] forKey:replacementString];
+					[endingSetDict setObject:tempSet forKey:replacementString];
 					[tempSet release];
 					endingTrimSet = [endingSetDict objectForKey:replacementString];
 				}
@@ -535,11 +535,11 @@ NSInteger packSortFunction(id packA, id packB, void *packOrderingArray);
 - (NSString *)styleStringWithString:(NSString *)messageString {
 //    return sourceString;
     NSMutableString *newMessage = nil;
-    NSUInteger currentLocation = 0, messageStringLength;
+    NSUInteger currentLocation = 0;//, messageStringLength;
     NSCharacterSet				*emoticonStartCharacterSet = self.emoticonStartCharacterSet;
     NSDictionary				*emoticonIndex = self.emoticonIndex;
     
-    messageStringLength = [messageString length];
+//    messageStringLength = [messageString length];
 
     
     [self replaceAnEmoticonStartingAtLocation3:&currentLocation fromString:messageString intoString:&newMessage callingRecursively:YES emoticonStartCharacterSet:emoticonStartCharacterSet emoticonIndex:emoticonIndex];

@@ -29,7 +29,7 @@
     NSCharacterSet				*_emoticonStartCharacterSet;
     NSMutableDictionary         *_emoticonIndexDict;
 	
-	BOOL						serviceAppropriateEmoticons;
+//	BOOL						serviceAppropriateEmoticons;
 }
 
 + (AIEmoticonController *)sharedController;
