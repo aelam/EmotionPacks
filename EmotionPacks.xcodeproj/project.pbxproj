@@ -15,12 +15,19 @@
 		949946BC15BD53A000A5FE57 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BB15BD53A000A5FE57 /* JDAppDelegate.m */; };
 		949946BF15BD53A000A5FE57 /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BE15BD53A000A5FE57 /* JDViewController.m */; };
 		949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949946C015BD53A000A5FE57 /* JDViewController.xib */; };
-		949946CE15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset in Resources */ = {isa = PBXBuildFile; fileRef = 949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */; };
 		949946D615BD56EF00A5FE57 /* AIEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D315BD56EF00A5FE57 /* AIEmoticon.m */; };
 		949946D715BD56EF00A5FE57 /* AIEmoticonPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D515BD56EF00A5FE57 /* AIEmoticonPack.m */; };
 		9499488015BEC09D00A5FE57 /* AIEmoticonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */; };
 		9499488415BEC5B200A5FE57 /* Adiumy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9499488215BEC5B200A5FE57 /* Adiumy.bundle */; };
 		9499488515BEC5B200A5FE57 /* Default.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9499488315BEC5B200A5FE57 /* Default.bundle */; };
+		949ECB3315BF1C5C0003BA2F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949ECB1215BF1BB40003BA2F /* SenTestingKit.framework */; };
+		949ECB3415BF1C5C0003BA2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949946AB15BD53A000A5FE57 /* UIKit.framework */; };
+		949ECB3515BF1C5C0003BA2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949946AD15BD53A000A5FE57 /* Foundation.framework */; };
+		949ECB4A15BF1C710003BA2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949ECB4415BF1C710003BA2F /* InfoPlist.strings */; };
+		949ECB4C15BF1C710003BA2F /* TestBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 949ECB4915BF1C710003BA2F /* TestBundle.m */; };
+		949ECB5115BF1D110003BA2F /* AIEmoticonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */; };
+		949ECB5215BF1D150003BA2F /* AIEmoticonPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D515BD56EF00A5FE57 /* AIEmoticonPack.m */; };
+		949ECB5315BF1D1A0003BA2F /* AIEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D315BD56EF00A5FE57 /* AIEmoticon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +44,6 @@
 		949946BD15BD53A000A5FE57 /* JDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
 		949946BE15BD53A000A5FE57 /* JDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
 		949946C115BD53A000A5FE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JDViewController.xib; sourceTree = "<group>"; };
-		949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Adiumy.AdiumEmoticonset; sourceTree = "<group>"; };
 		949946D115BD56DE00A5FE57 /* AIEmoticonControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonControllerProtocol.h; sourceTree = "<group>"; };
 		949946D215BD56EF00A5FE57 /* AIEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticon.h; sourceTree = "<group>"; };
 		949946D315BD56EF00A5FE57 /* AIEmoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIEmoticon.m; sourceTree = "<group>"; };
@@ -47,6 +53,17 @@
 		9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIEmoticonController.m; sourceTree = "<group>"; };
 		9499488215BEC5B200A5FE57 /* Adiumy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Adiumy.bundle; sourceTree = "<group>"; };
 		9499488315BEC5B200A5FE57 /* Default.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Default.bundle; sourceTree = "<group>"; };
+		949ECAFC15BEEAD50003BA2F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		949ECAFD15BEEAD50003BA2F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		949ECAFE15BEEAD50003BA2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		949ECB1215BF1BB40003BA2F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		949ECB1415BF1BB40003BA2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		949ECB3215BF1C5C0003BA2F /* TestBundle.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBundle.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949ECB4515BF1C710003BA2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		949ECB4615BF1C710003BA2F /* TestBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestBundle-Info.plist"; sourceTree = "<group>"; };
+		949ECB4715BF1C710003BA2F /* TestBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestBundle-Prefix.pch"; sourceTree = "<group>"; };
+		949ECB4815BF1C710003BA2F /* TestBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBundle.h; sourceTree = "<group>"; };
+		949ECB4915BF1C710003BA2F /* TestBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBundle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +77,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		949ECB2E15BF1C5C0003BA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949ECB3315BF1C5C0003BA2F /* SenTestingKit.framework in Frameworks */,
+				949ECB3415BF1C5C0003BA2F /* UIKit.framework in Frameworks */,
+				949ECB3515BF1C5C0003BA2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9499469C15BD539F00A5FE57 = {
 			isa = PBXGroup;
 			children = (
+				949ECB4315BF1C710003BA2F /* TestBundle */,
 				949946D015BD551C00A5FE57 /* AIEmotions */,
 				949946CC15BD545D00A5FE57 /* Emoticons (Build in) */,
 				949946B115BD53A000A5FE57 /* EmotionPacks */,
@@ -78,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				949946A715BD53A000A5FE57 /* EmotionPacks.app */,
+				949ECB3215BF1C5C0003BA2F /* TestBundle.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +117,9 @@
 				949946AB15BD53A000A5FE57 /* UIKit.framework */,
 				949946AD15BD53A000A5FE57 /* Foundation.framework */,
 				949946AF15BD53A000A5FE57 /* CoreGraphics.framework */,
+				949ECB1215BF1BB40003BA2F /* SenTestingKit.framework */,
+				949ECB1415BF1BB40003BA2F /* Cocoa.framework */,
+				949ECAFB15BEEAD50003BA2F /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,7 +153,6 @@
 			children = (
 				9499488215BEC5B200A5FE57 /* Adiumy.bundle */,
 				9499488315BEC5B200A5FE57 /* Default.bundle */,
-				949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */,
 			);
 			path = "Emoticons (Build in)";
 			sourceTree = "<group>";
@@ -138,6 +169,28 @@
 				9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */,
 			);
 			path = AIEmotions;
+			sourceTree = "<group>";
+		};
+		949ECAFB15BEEAD50003BA2F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949ECAFC15BEEAD50003BA2F /* AppKit.framework */,
+				949ECAFD15BEEAD50003BA2F /* CoreData.framework */,
+				949ECAFE15BEEAD50003BA2F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		949ECB4315BF1C710003BA2F /* TestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				949ECB4415BF1C710003BA2F /* InfoPlist.strings */,
+				949ECB4615BF1C710003BA2F /* TestBundle-Info.plist */,
+				949ECB4715BF1C710003BA2F /* TestBundle-Prefix.pch */,
+				949ECB4815BF1C710003BA2F /* TestBundle.h */,
+				949ECB4915BF1C710003BA2F /* TestBundle.m */,
+			);
+			path = TestBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +212,24 @@
 			productName = EmotionPacks;
 			productReference = 949946A715BD53A000A5FE57 /* EmotionPacks.app */;
 			productType = "com.apple.product-type.application";
+		};
+		949ECB3115BF1C5C0003BA2F /* TestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949ECB4015BF1C5C0003BA2F /* Build configuration list for PBXNativeTarget "TestBundle" */;
+			buildPhases = (
+				949ECB2D15BF1C5C0003BA2F /* Sources */,
+				949ECB2E15BF1C5C0003BA2F /* Frameworks */,
+				949ECB2F15BF1C5C0003BA2F /* Resources */,
+				949ECB3015BF1C5C0003BA2F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBundle;
+			productName = TestBundle;
+			productReference = 949ECB3215BF1C5C0003BA2F /* TestBundle.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				949946A615BD53A000A5FE57 /* EmotionPacks */,
+				949ECB3115BF1C5C0003BA2F /* TestBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -193,13 +265,36 @@
 			files = (
 				949946B615BD53A000A5FE57 /* InfoPlist.strings in Resources */,
 				949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */,
-				949946CE15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset in Resources */,
 				9499488415BEC5B200A5FE57 /* Adiumy.bundle in Resources */,
 				9499488515BEC5B200A5FE57 /* Default.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		949ECB2F15BF1C5C0003BA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949ECB4A15BF1C710003BA2F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		949ECB3015BF1C5C0003BA2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		949946A315BD53A000A5FE57 /* Sources */ = {
@@ -212,6 +307,17 @@
 				949946D615BD56EF00A5FE57 /* AIEmoticon.m in Sources */,
 				949946D715BD56EF00A5FE57 /* AIEmoticonPack.m in Sources */,
 				9499488015BEC09D00A5FE57 /* AIEmoticonController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949ECB2D15BF1C5C0003BA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949ECB4C15BF1C710003BA2F /* TestBundle.m in Sources */,
+				949ECB5115BF1D110003BA2F /* AIEmoticonController.m in Sources */,
+				949ECB5215BF1D150003BA2F /* AIEmoticonPack.m in Sources */,
+				949ECB5315BF1D1A0003BA2F /* AIEmoticon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +338,14 @@
 				949946C115BD53A000A5FE57 /* en */,
 			);
 			name = JDViewController.xib;
+			sourceTree = "<group>";
+		};
+		949ECB4415BF1C710003BA2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949ECB4515BF1C710003BA2F /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +416,36 @@
 			};
 			name = Release;
 		};
+		949ECB4115BF1C5C0003BA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBundle/TestBundle-Prefix.pch";
+				INFOPLIST_FILE = "TestBundle/TestBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		949ECB4215BF1C5C0003BA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestBundle/TestBundle-Prefix.pch";
+				INFOPLIST_FILE = "TestBundle/TestBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +466,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		949ECB4015BF1C5C0003BA2F /* Build configuration list for PBXNativeTarget "TestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949ECB4115BF1C5C0003BA2F /* Debug */,
+				949ECB4215BF1C5C0003BA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

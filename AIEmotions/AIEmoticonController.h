@@ -32,4 +32,12 @@
 	BOOL						serviceAppropriateEmoticons;
 }
 
++ (AIEmoticonController *)sharedController;
+
+- (NSMutableArray *)defaultPacks;
+
+
+- (NSString *)styleStringWithString:(NSString *)sourceString;
+
+
 @end

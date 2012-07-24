@@ -23,6 +23,7 @@
     NSMutableArray		*emoticonArray;
 	NSMutableArray		*enabledEmoticonArray;
     BOOL				enabled;
+    NSNumber            *isBigEmoticon;
 }
 
 @property (nonatomic,assign,getter = isEnabled) BOOL enabled;
@@ -34,15 +35,13 @@
 + (id)emoticonPackFromPath:(NSString *)inPath;
 - (void)setDisabledEmoticons:(NSArray *)inArray;
 - (NSString *)version;
+- (BOOL)isBigEmoticon;
 - (NSArray *)emoticons;
 - (NSArray *)enabledEmoticons;
-- (NSImage *)menuPreviewImage;
+- (UIImage *)menuPreviewImage;
 - (NSString *)name;
 - (NSString *)path;
 - (NSString *)serviceClass;
-//- (void)flushEmoticonImageCache;
-//- (void)setIsEnabled:(BOOL)inEnabled;
-//- (BOOL)isEnabled;
-
+- (void)flushEmoticonImageCache;
 
 @end

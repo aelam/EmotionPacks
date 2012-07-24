@@ -7,6 +7,8 @@
 //
 
 #import "JDViewController.h"
+#import "AIEmoticonController.h"
+#import "AIEmoticonPack.h"
 
 @interface JDViewController ()
 
@@ -17,7 +19,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *testString = @":-[:-[:-[:-[:[:'(";    //Pass
+//    NSString *testString = @":-[fsdflskj(A)(A)(a)((A))fklasjfnv,xnvmx :) ;) >:-o :[:[:[:[";
+//    NSString *testString = nil;//pass
+    
+    NSString *output = [[AIEmoticonController sharedController] styleStringWithString:testString];
+    NSLog(@"%@",testString);
+    NSLog(@"%@",output);
+    
+    
+    NSArray *packs = [[AIEmoticonController sharedController] defaultPacks];
+    NSLog(@"packs \n %@",packs);
+    
 }
 
 - (void)viewDidUnload

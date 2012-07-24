@@ -35,9 +35,10 @@
 #define EMOTICON_LOCATION				@"Location"
 #define EMOTICON_LOCATION_SEPARATOR		@"////"
 
-#define DEFAULT_SMALL_NAME              @"Adium.bundle"
+#define DEFAULT_SMALL_NAME              @"Adiumy.bundle"
 #define DEFAULT_BIG_NAME                @"Default.bundle"
 
+#define IS_BIG_EMOTICON_KEY             @"IsBigEmoticon"
 
 @interface AIEmoticonPack ()
 - (AIEmoticonPack *)initFromPath:(NSString *)inPath;
@@ -91,9 +92,11 @@
 {
     if ((self = [super init])) {
 		path = [inPath retain];
-
+        
 		bundle = [[NSBundle bundleWithPath:path] retain];
 
+        isBigEmoticon = [NSNumber numberWithInt:-1];
+        
 		/*
 		if (xtraBundle && ([[xtraBundle objectForInfoDictionaryKey:@"XtraBundleVersion"] intValue] == 1)) {
 			//This checks for a new-style xtra
@@ -121,6 +124,20 @@
 - (NSString *)version {
     return nil;
 }
+
+- (BOOL)isBigEmoticon {
+    
+    if ([isBigEmoticon intValue] == -1) {
+        NSString        *infoDictPath = [path stringByAppendingPathComponent:EMOTICON_PLIST_FILENAME];
+        NSDictionary	*infoDict = [NSDictionary dictionaryWithContentsOfFile:infoDictPath];
+//        NSDictionary	*localizedInfoDict = [bundle localizedInfoDictionary];
+        
+        isBigEmoticon = [infoDict objectForKey:IS_BIG_EMOTICON_KEY];        
+    }
+    
+    return [isBigEmoticon boolValue];
+}
+
 
 //Dealloc
 - (void)dealloc
@@ -195,7 +212,7 @@
  *
  * It tries to be the emoticon for text equivalent :) or :-). Failing that, any emoticon will do.
  */
-- (NSImage *)menuPreviewImage
+- (UIImage *)menuPreviewImage
 {
     return nil;
     /*
@@ -285,13 +302,16 @@
 	[serviceClass release]; serviceClass = nil;
 
 	//
-	NSString		*infoDictPath = [bundle pathForResource:EMOTICON_PLIST_FILENAME ofType:nil];
+//	NSString		*infoDictPath = [bundle pathForResource:EMOTICON_PLIST_FILENAME ofType:nil];
+    NSString        *infoDictPath = [path stringByAppendingPathComponent:EMOTICON_PLIST_FILENAME];
 	NSDictionary	*infoDict = [NSDictionary dictionaryWithContentsOfFile:infoDictPath];
 	NSDictionary	*localizedInfoDict = [bundle localizedInfoDictionary];
 
+    isBigEmoticon = [[infoDict objectForKey:IS_BIG_EMOTICON_KEY] boolValue];
+    
 	//If no info dict was found, assume that this is an old emoticon pack and try to upgrade it
 	if (!infoDict) {
-		AILog(@"Upgrading Emoticon Pack %@ at %@...", self, bundle);
+//		AILog(@"Upgrading Emoticon Pack %@ at %@...", self, bundle);
 		[self _upgradeEmoticonPack:path];
 		infoDict = [NSDictionary dictionaryWithContentsOfFile:infoDictPath];
 		[bundle release]; bundle = [[NSBundle bundleWithPath:path] retain];
@@ -406,8 +426,9 @@
 				if (localizedEmoticonName)
 					emoticonName = localizedEmoticonName;
 			}
-
-			[emoticonArray addObject:[AIEmoticon emoticonWithIconPath:[bundle pathForImageResource:fileName]
+            
+            NSString *iconPath = [path stringByAppendingPathComponent:fileName];
+			[emoticonArray addObject:[AIEmoticon emoticonWithIconPath:iconPath
 														  equivalents:[(NSDictionary *)dict objectForKey:EMOTICON_EQUIVALENTS]
 																 name:emoticonName
 																 pack:self]];
@@ -426,8 +447,10 @@
 	while ((fileName = [enumerator nextObject])) {
 		NSDictionary	*dict = [emoticons objectForKey:fileName];
 		
-		[emoticonArray addObject:[AIEmoticon emoticonWithIconPath:[bundle pathForImageResource:fileName]
-													  equivalents:[dict objectForKey:@"String Representations"]
+        NSString *iconPath = [path stringByAppendingPathComponent:fileName];
+
+		[emoticonArray addObject:[AIEmoticon emoticonWithIconPath:iconPath
+                                                      equivalents:[dict objectForKey:@"String Representations"]
 															 name:[dict objectForKey:@"Meaning"]
 															 pack:self]];
 	}
@@ -517,10 +540,10 @@
 	
 	//Write our plist to the new pack
 	[infoDict setObject:emoticonDict forKey:EMOTICON_LIST];
-	[infoDict writeToFile:[packPath stringByAppendingPathComponent:EMOTICON_PLIST_FILENAME] atomically:NO];
+//	[infoDict writeToFile:[packPath stringByAppendingPathComponent:EMOTICON_PLIST_FILENAME] atomically:NO];
 	
 	//Move the old/temp pack to the trash
-	[mgr trashFileAtPath:tempPackPath];
+//	[mgr trashFileAtPath:tempPackPath];
 }
 
 /*!
@@ -586,7 +609,7 @@
 
 - (NSString *)description
 {
-	return ([NSString stringWithFormat:@"[%@: %@, ServiceClass %@]",[super description], [self name], self.serviceClass]);
+	return ([NSString stringWithFormat:@"[%@: %@, ServiceClass %@ isBigEmoticon : %d]",[super description], [self name], self.serviceClass,[self isBigEmoticon]]);
 }
 
 /* Localized emoticon names, listed here for genstrings:

@@ -52,6 +52,7 @@
 		textEquivalents = [inTextEquivalents retain];
 		pack = [inPack retain];
 		imageLoaded = NO;
+        enabled = YES;
     }
 
     return self;
@@ -166,16 +167,13 @@
 
 - (NSString *)styleStringWithTextEquivalent:(NSString *)textEquivalent {
     NSString *mutableString;
-//
-//    if (!_cachedString || (!imageLoaded)) {
-        if(!path) {
-            mutableString = [NSString stringWithFormat:@"<img src=\"%@\">",path];
-        } else {
-            mutableString = textEquivalent;
-        }
-//    } else {
-//        mutableString = textEquivalent;        
-//    }
+    if(path) {
+//        mutableString = [NSString stringWithFormat:@"<img src=\"%@\">",path];
+        mutableString = [NSString stringWithFormat:@"\n<img src=\"%@:%@\">\n",pack.name,name];
+
+    } else {
+        mutableString = textEquivalent;
+    }
     return mutableString;
 }
 

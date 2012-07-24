@@ -33,7 +33,6 @@
 - (NSArray *)textEquivalents;
 - (NSString *)styleStringWithTextEquivalent:(NSString *)textEquivalent;
 
-
 - (BOOL)isAppropriateForServiceClass:(NSString *)inServiceClass;
 - (NSImage *)image;
 - (void)setPath:(NSString *)inPath;

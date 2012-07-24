@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'TestBundle' target in the 'TestBundle' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

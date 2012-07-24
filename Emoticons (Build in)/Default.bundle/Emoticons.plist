@@ -4,6 +4,8 @@
 <dict>
 	<key>AdiumSetVersion</key>
 	<integer>1</integer>
+	<key>IsBigEmoticon</key>
+	<true/>
 	<key>Emoticons</key>
 	<dict>
 		<key>Angel.png</key>
@@ -308,7 +310,7 @@
 				<string>:,(</string>
 				<string>:´)</string>
 				<string>:`(</string>
-				<string>:'(</string>
+				<string>:&apos;(</string>
 			</array>
 			<key>Name</key>
 			<string>Crying</string>
