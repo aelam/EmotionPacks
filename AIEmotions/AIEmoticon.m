@@ -168,8 +168,8 @@
 - (NSString *)styleStringWithTextEquivalent:(NSString *)textEquivalent {
     NSString *mutableString;
     if(path) {
-//        mutableString = [NSString stringWithFormat:@"<img src=\"%@\">",path];
-        mutableString = [NSString stringWithFormat:@"\n<img src=\"%@:%@\">\n",pack.name,name];
+        mutableString = [NSString stringWithFormat:@"<img src=\"%@\">",path];
+//        mutableString = [NSString stringWithFormat:@"\n<img src=\"%@:%@\">\n",pack.name,name];
 
     } else {
         mutableString = textEquivalent;
