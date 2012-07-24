@@ -15,6 +15,12 @@
 		949946BC15BD53A000A5FE57 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BB15BD53A000A5FE57 /* JDAppDelegate.m */; };
 		949946BF15BD53A000A5FE57 /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946BE15BD53A000A5FE57 /* JDViewController.m */; };
 		949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949946C015BD53A000A5FE57 /* JDViewController.xib */; };
+		949946CE15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset in Resources */ = {isa = PBXBuildFile; fileRef = 949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */; };
+		949946D615BD56EF00A5FE57 /* AIEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D315BD56EF00A5FE57 /* AIEmoticon.m */; };
+		949946D715BD56EF00A5FE57 /* AIEmoticonPack.m in Sources */ = {isa = PBXBuildFile; fileRef = 949946D515BD56EF00A5FE57 /* AIEmoticonPack.m */; };
+		9499488015BEC09D00A5FE57 /* AIEmoticonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */; };
+		9499488415BEC5B200A5FE57 /* Adiumy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9499488215BEC5B200A5FE57 /* Adiumy.bundle */; };
+		9499488515BEC5B200A5FE57 /* Default.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9499488315BEC5B200A5FE57 /* Default.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +28,25 @@
 		949946AB15BD53A000A5FE57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		949946AD15BD53A000A5FE57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		949946AF15BD53A000A5FE57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		949946B315BD53A000A5FE57 /* EmotionPacks-Info.plist */ = {isa = PBXFileReference; path = "EmotionPacks-Info.plist"; sourceTree = "<group>"; };
+		949946B315BD53A000A5FE57 /* EmotionPacks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmotionPacks-Info.plist"; sourceTree = "<group>"; };
 		949946B515BD53A000A5FE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		949946B715BD53A000A5FE57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		949946B915BD53A000A5FE57 /* EmotionPacks-Prefix.pch */ = {isa = PBXFileReference; path = "EmotionPacks-Prefix.pch"; sourceTree = "<group>"; };
-		949946BA15BD53A000A5FE57 /* JDAppDelegate.h */ = {isa = PBXFileReference; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		949946B915BD53A000A5FE57 /* EmotionPacks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotionPacks-Prefix.pch"; sourceTree = "<group>"; };
+		949946BA15BD53A000A5FE57 /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
 		949946BB15BD53A000A5FE57 /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
-		949946BD15BD53A000A5FE57 /* JDViewController.h */ = {isa = PBXFileReference; path = JDViewController.h; sourceTree = "<group>"; };
+		949946BD15BD53A000A5FE57 /* JDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
 		949946BE15BD53A000A5FE57 /* JDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
 		949946C115BD53A000A5FE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JDViewController.xib; sourceTree = "<group>"; };
+		949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Adiumy.AdiumEmoticonset; sourceTree = "<group>"; };
+		949946D115BD56DE00A5FE57 /* AIEmoticonControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonControllerProtocol.h; sourceTree = "<group>"; };
+		949946D215BD56EF00A5FE57 /* AIEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticon.h; sourceTree = "<group>"; };
+		949946D315BD56EF00A5FE57 /* AIEmoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIEmoticon.m; sourceTree = "<group>"; };
+		949946D415BD56EF00A5FE57 /* AIEmoticonPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonPack.h; sourceTree = "<group>"; };
+		949946D515BD56EF00A5FE57 /* AIEmoticonPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIEmoticonPack.m; sourceTree = "<group>"; };
+		9499487E15BEC09D00A5FE57 /* AIEmoticonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonController.h; sourceTree = "<group>"; };
+		9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIEmoticonController.m; sourceTree = "<group>"; };
+		9499488215BEC5B200A5FE57 /* Adiumy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Adiumy.bundle; sourceTree = "<group>"; };
+		9499488315BEC5B200A5FE57 /* Default.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Default.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,8 @@
 		9499469C15BD539F00A5FE57 = {
 			isa = PBXGroup;
 			children = (
+				949946D015BD551C00A5FE57 /* AIEmotions */,
+				949946CC15BD545D00A5FE57 /* Emoticons (Build in) */,
 				949946B115BD53A000A5FE57 /* EmotionPacks */,
 				949946AA15BD53A000A5FE57 /* Frameworks */,
 				949946A815BD53A000A5FE57 /* Products */,
@@ -96,6 +114,30 @@
 				949946B915BD53A000A5FE57 /* EmotionPacks-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949946CC15BD545D00A5FE57 /* Emoticons (Build in) */ = {
+			isa = PBXGroup;
+			children = (
+				9499488215BEC5B200A5FE57 /* Adiumy.bundle */,
+				9499488315BEC5B200A5FE57 /* Default.bundle */,
+				949946CD15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset */,
+			);
+			path = "Emoticons (Build in)";
+			sourceTree = "<group>";
+		};
+		949946D015BD551C00A5FE57 /* AIEmotions */ = {
+			isa = PBXGroup;
+			children = (
+				949946D115BD56DE00A5FE57 /* AIEmoticonControllerProtocol.h */,
+				949946D215BD56EF00A5FE57 /* AIEmoticon.h */,
+				949946D315BD56EF00A5FE57 /* AIEmoticon.m */,
+				949946D415BD56EF00A5FE57 /* AIEmoticonPack.h */,
+				949946D515BD56EF00A5FE57 /* AIEmoticonPack.m */,
+				9499487E15BEC09D00A5FE57 /* AIEmoticonController.h */,
+				9499487F15BEC09D00A5FE57 /* AIEmoticonController.m */,
+			);
+			path = AIEmotions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +193,9 @@
 			files = (
 				949946B615BD53A000A5FE57 /* InfoPlist.strings in Resources */,
 				949946C215BD53A000A5FE57 /* JDViewController.xib in Resources */,
+				949946CE15BD545D00A5FE57 /* Adiumy.AdiumEmoticonset in Resources */,
+				9499488415BEC5B200A5FE57 /* Adiumy.bundle in Resources */,
+				9499488515BEC5B200A5FE57 /* Default.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +209,9 @@
 				949946B815BD53A000A5FE57 /* main.m in Sources */,
 				949946BC15BD53A000A5FE57 /* JDAppDelegate.m in Sources */,
 				949946BF15BD53A000A5FE57 /* JDViewController.m in Sources */,
+				949946D615BD56EF00A5FE57 /* AIEmoticon.m in Sources */,
+				949946D715BD56EF00A5FE57 /* AIEmoticonPack.m in Sources */,
+				9499488015BEC09D00A5FE57 /* AIEmoticonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +321,7 @@
 				949946C715BD53A000A5FE57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
